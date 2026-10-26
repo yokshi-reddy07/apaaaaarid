@@ -1,0 +1,3 @@
+export type Student={id:string;student_name:string;apaar_id:string;institution_id:string;academic_year:string;programme:string;department:string|null;semester:number|null;enrolment_year:number;record_status:string;created_at:string;updated_at:string; institutions?:{name:string}|null};
+export type Institution={id:string;name:string;institution_identifier:string;approved_intake:number;actual_enrolment:number;supernumerary_seats:number;created_at:string;updated_at:string};
+export type Issue={id:string;student_id:string|null;issue_type:string;description:string;severity:string;review_status:string;reviewer_notes:string|null;detected_at:string;students?:{student_name:string;apaar_id:string}|null};
